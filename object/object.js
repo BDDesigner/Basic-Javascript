@@ -3,10 +3,15 @@ const car = {
     color: 'Black',
     price: '50k',
     start: function () {
-        console.log('The Car is Start.');
+        return 'The Car is Start';
     },
     stop: function () {
-        console.log('The Car is Stop.');
+        const result = this.start();
+        return result + " 10 minute Later The car was Stop.";
     }
 }
+
+console.log(car.name);
+console.log(car.start());
+console.log(car.stop());
 
